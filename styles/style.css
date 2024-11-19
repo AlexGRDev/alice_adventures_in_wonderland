@@ -1,0 +1,171 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.header {
+    text-align: left;
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-author {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.review-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.review-img {
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.review-title {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+.review-text {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-caption {
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.table-header {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.table-header-cell {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-body .table-row {
+    border: 1px solid #ddd;
+}
+
+.table-body .table-row:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-body .table-row:hover {
+    background-color: #d9e8ff;
+}
+
+.collapsed {
+    display: none;
+}
+
+/* List Styles */
+.chapter-list {
+    padding-left: 40px;
+}
+
+.chapter-item {
+    margin: 10px 0;
+}
+
+.chapter-link {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.chapter-link:hover {
+    color: #d9534f;
+}
+
+@media (aspect-ratio: 16/9) {
+    .body {
+        background-color: #eef5ff;
+    }
+    .header-title {
+        font-size: 2.2em;
+    }
+    .header-author {
+        font-size: 1.3em;
+    }
+    .review-section {
+        padding: 15px;
+    }
+    .review-img {
+        width: 120px;
+    }
+}
+
+@media (aspect-ratio: 4/3) {
+    .body {
+        background-color: #ffefef;
+    }
+    .header-title {
+        font-size: 2.8em;
+    }
+    .header-author {
+        font-size: 1.8em;
+    }
+    .review-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .review-img {
+        margin: 0 0 15px;
+    }
+}
+
+@media (aspect-ratio: 1/1) {
+    .body {
+        background-color: #f5ffef;
+    }
+    .header-title {
+        font-size: 3em;
+    }
+    .header-author {
+        font-size: 2em;
+    }
+    .review-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-img {
+        margin: 0 0 20px;
+        width: 200px;
+    }
+}
