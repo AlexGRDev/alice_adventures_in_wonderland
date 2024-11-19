@@ -1,5 +1,13 @@
-.body {
-    font-family: 'Roboto', sans-serif;
+@font-face {
+    font-family: 'AliciaWonderland';
+    src: url('../founts/alicia-wonderland-font/Aliciawonderland-ZoM8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-007F; /* Esto aplicará la fuente solo a caracteres ASCII */
+}
+
+body {
+    font-family: 'AliciaWonderland', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -15,13 +23,13 @@
 }
 
 .header-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'AliciaWonderland', serif;
     font-size: 2.5em;
     margin: 0;
 }
 
 .header-author {
-    font-family: 'Lora', serif;
+    font-family: 'AliciaWonderland', serif;
     font-size: 1.5em;
     margin: 0;
 }
@@ -36,56 +44,48 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.review-img {
+.review-image {
     margin-right: 20px;
     width: 150px;
     height: auto;
     border-radius: 8px;
 }
 
-.review-title {
-    font-family: 'Lora', serif;
+.review-heading {
+    font-family: 'AliciaWonderland', serif;
     margin: 0;
 }
 
-.review-text {
-    font-family: 'Roboto', sans-serif;
+.review-paragraph {
+    font-family: Arial, sans-serif; /* Aplica Arial para caracteres especiales */
     color: #333;
     margin: 0;
 }
 
-.details-table {
+.book-details-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
 
-.table-caption {
-    text-align: left;
-    font-family: 'Lora', serif;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.table-header {
+.table-header-cell {
     background-color: #4a90e2;
     color: white;
-}
-
-.table-header-cell {
     padding: 10px;
     text-align: left;
 }
 
-.table-body .table-row {
-    border: 1px solid #ddd;
+.table-cell {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-.table-body .table-row:nth-child(odd) {
+.table-body .collapsed-row:nth-child(odd) {
     background-color: #f9f9f9;
 }
 
-.table-body .table-row:hover {
+.table-body .collapsed-row:hover {
     background-color: #d9e8ff;
 }
 
@@ -94,7 +94,7 @@
 }
 
 /* List Styles */
-.chapter-list {
+.chapters-list {
     padding-left: 40px;
 }
 
@@ -110,62 +110,4 @@
 
 .chapter-link:hover {
     color: #d9534f;
-}
-
-@media (aspect-ratio: 16/9) {
-    .body {
-        background-color: #eef5ff;
-    }
-    .header-title {
-        font-size: 2.2em;
-    }
-    .header-author {
-        font-size: 1.3em;
-    }
-    .review-section {
-        padding: 15px;
-    }
-    .review-img {
-        width: 120px;
-    }
-}
-
-@media (aspect-ratio: 4/3) {
-    .body {
-        background-color: #ffefef;
-    }
-    .header-title {
-        font-size: 2.8em;
-    }
-    .header-author {
-        font-size: 1.8em;
-    }
-    .review-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .review-img {
-        margin: 0 0 15px;
-    }
-}
-
-@media (aspect-ratio: 1/1) {
-    .body {
-        background-color: #f5ffef;
-    }
-    .header-title {
-        font-size: 3em;
-    }
-    .header-author {
-        font-size: 2em;
-    }
-    .review-section {
-        flex-direction: column;
-        align-items: center;
-    }
-    .review-img {
-        margin: 0 0 20px;
-        width: 200px;
-    }
 }
