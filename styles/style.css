@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'AliciaWonderland';
-    src: url('../founts/alicia-wonderland-font/Aliciawonderland-ZoM8.ttf') format('truetype');
+    src: url('../founts/alicia-wonderland-font/Alice_in_Wonderland_3.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     unicode-range: U+0020-007F; /* Esto aplicará la fuente solo a caracteres ASCII */
@@ -57,7 +57,7 @@ body {
 }
 
 .review-paragraph {
-    font-family: Arial, sans-serif; /* Aplica Arial para caracteres especiales */
+    font-family:'AliciaWonderland', serif;
     color: #333;
     margin: 0;
 }
