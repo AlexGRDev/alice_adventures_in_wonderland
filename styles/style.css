@@ -3,7 +3,6 @@
     src: url('../fonts/Alice_in_Wonderland_3.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    unicode-range: U+0020-007F; /* Esto aplicará la fuente solo a caracteres ASCII */
 }
 
 body {
@@ -57,7 +56,7 @@ body {
 }
 
 .review-paragraph {
-    font-family:'AliciaWonderland', serif;
+    font-family: 'AliciaWonderland', serif;
     color: #333;
     margin: 0;
 }
@@ -110,4 +109,16 @@ body {
 
 .chapter-link:hover {
     color: #d9534f;
+}
+
+.narrow-column {
+    width: 10%;
+    margin: 0 left;
+    text-align: left;
+    font-family: 'AliciaWonderland', serif;
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
